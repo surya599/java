@@ -10,11 +10,11 @@ public class binarysearch
 		while(low <= high)
 		{
 			mid = (low+high)/2;
-			if (key == mid)
+			if (key == a[mid])
 			{
 				return mid;
 			}
-			else if (key < mid)
+			else if (key < a[mid])
 			{
 				high = mid-1;
 			
@@ -34,6 +34,7 @@ public class binarysearch
 	System.out.println("enter the number of elements in the array ");
 	n = sc.nextInt();
 	int a[] =  new int [n];
+	System.out.println("enter the elements of the array");
 	for(i = 0;i<n;i++)
 	{
 		j = sc.nextInt();
