@@ -1,21 +1,32 @@
 import java.util.Scanner;
-public class student
+class car1
 {
 	String name;
-	int rollno;
+	int model;
 	
+	car1(String a,int b)
+	{
+		name = a;
+		model = b;
+	}
+	void display()
+	{
+		System.out.println("the name of the car is " +name);
+		System.out.println("the model of the car is " + model);
+	}
+}
+
+public class car
+{
 	public static void main(String[] args)
 	{
-			System.out.println("enter the name of the student");
-			Scanner sc = new Scanner(System.in);
-			String a = sc.nextLine();
-			System.out.println("enter the roll no of the student");
-			int b = sc.nextInt();
-			student s1 = new student();
-			s1.name = a;
-			s1.rollno = b;
-			
-			System.out.println("the name of the student is " + s1.name);
-			System.out.println("the rollno of the student is " + s1.rollno);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the name of the car");
+		String name = sc.nextLine();
+		System.out.println("enter the model number");
+		int number = sc.nextInt();
+		car1 mycar = new car1(name,number);
+		mycar.display();
+
 	}
 }
