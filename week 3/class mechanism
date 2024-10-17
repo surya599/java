@@ -1,1 +1,21 @@
-
+import java.util.Scanner;
+public class student
+{
+	String name;
+	int rollno;
+	
+	public static void main(String[] args)
+	{
+			System.out.println("enter the name of the student");
+			Scanner sc = new Scanner(System.in);
+			String a = sc.nextLine();
+			System.out.println("enter the roll no of the student");
+			int b = sc.nextInt();
+			student s1 = new student();
+			s1.name = a;
+			s1.rollno = b;
+			
+			System.out.println("the name of the student is " + s1.name);
+			System.out.println("the rollno of the student is " + s1.rollno);
+	}
+}
