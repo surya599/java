@@ -1,1 +1,43 @@
 
+class dog
+{
+    String name;
+    String breed;
+    int age;
+    public dog(String name)
+    {
+        this.name = name;
+    }
+    public dog(String name,String breed)
+    {
+        this.name = name;
+        this.breed = breed;
+    }
+    public dog(String name,String breed,int age)
+    {
+        this.name = name;
+        this.age = age;
+        this.breed = breed;
+    }
+
+    void display()
+    {
+        System.out.println("name :" + name + ",breed :" + breed + ",age :" + age);
+    }
+
+
+}
+public class constructoroverloading
+{
+    public static void main(String [] args)
+    {
+        dog dog1 = new dog("snoopy");
+        dog dog2 = new dog("max","golden retriever");
+        dog dog3 = new dog("mark","chihuahua",4);
+
+        dog1.display();
+        dog2.display();
+        dog3.display();
+
+    }
+}
