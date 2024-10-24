@@ -1,0 +1,47 @@
+import java.lang.Math;
+class calc
+{
+    public int add(int a,int b)
+    {
+        return a+b;
+    }
+    public int sub(int a , int b)
+    {
+        return a-b;
+    }
+    
+}
+class advcalc extends calc
+{
+    public int mult(int a,int b)
+    {
+        return a*b;
+    }
+    public int div(int a,int b)
+    {
+        return a/b;
+    }
+}
+
+class scical extends advcalc
+{
+    public double power(int a,int b)
+    {
+        return Math.pow(a,b);
+    }
+}
+
+public class minheritence
+{
+    public static void main(String [] args)
+    {
+        scical mycal = new scical();
+        int r1 = mycal.add(3,5);
+        int r2 = mycal.sub(10,2);
+        int r3 = mycal.mult(4,5);
+        int r4 = mycal.div(9,3);
+        double r5 = mycal.power(2,3);
+
+        System.out.println(r1 + " " + r2 + " " + r3 + " " + r4 + " " + r5) ;
+    }
+}
