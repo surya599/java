@@ -1,0 +1,29 @@
+interface animal
+{
+    void display();
+}
+class dog implements animal
+{
+    String animal;
+    String breed;
+    public dog(String animal,String breed)
+    {
+        this.animal = animal;
+        this.breed = breed;
+
+    }
+    public void display()
+    {
+        System.out.println("NAME OF THE ANIMAL IS " + animal);
+        System.out.println("NAME OF THE BREED IS " + breed);
+
+    }
+}
+public class interf
+{
+    public static void main(String [] args)
+    {
+        dog mydog = new dog("hammy","german shepherd");
+        mydog.display();
+    }
+}
