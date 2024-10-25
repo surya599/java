@@ -1,0 +1,28 @@
+public class multiplecatch
+{
+    public static void main(String [] args)
+    {
+        int i = 3;
+        int j = 9;
+        int k = 0;
+        int arr[] = new int[5];
+        try
+        {
+            k = j/i;
+            System.out.println(arr[5]);
+            System.out.println(arr[1]);
+        }
+        catch (ArithmeticException e)
+        {
+            System.out.println("cannot be divided by zero");
+        }
+        catch (ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("out of limit");
+        }
+        catch(Exception e)
+        {
+            System.out.println("something went wrong");
+        }
+    }
+}
