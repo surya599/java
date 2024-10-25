@@ -1,0 +1,32 @@
+class MyException extends Exception
+{
+    MyException()
+    {
+
+    }
+}
+public class custom
+{
+    public static void main(String[] args)
+    {
+        int i = 25;
+        int j = 0;
+        int k = 0;
+        try
+        {
+            if (j == 0)
+            {
+                throw new MyException();
+            }
+            k = i/j;
+        }
+        catch(MyException e)
+        {
+            System.out.println("cannot be divided by zero");
+        }
+        catch (Exception e)
+        {
+            System.out.println("some thing went wrong " + e);
+        }
+    }
+}
