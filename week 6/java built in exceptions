@@ -9,15 +9,6 @@ public class BuiltInExceptionsExample {
             System.out.println("Caught an ArithmeticException: " + e.getMessage());
         }
 
-        try {
-            
-            int[] array = new int[5];
-            array[10] = 20; 
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Caught an ArrayIndexOutOfBoundsException: " + e.getMessage());
-        }
-
-
         System.out.println("End of program");
     }
 }
