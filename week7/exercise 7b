@@ -1,0 +1,32 @@
+class mythread extends Thread
+{
+    public void run()
+    {
+        System.out.println("the thread is running");
+    }
+}
+
+public class exercise7b
+{
+    public static void main(String [] args)
+    {
+        mythread t1 = new mythread();
+        t1.start();
+
+        System.out.println("is t1 alive ?" + t1.isAlive());
+
+        try
+        {
+            t1.join();
+        }
+        catch(InterruptedException e)
+        {
+            System.out.println("thread interrupted");
+        }
+        System.out.println("is t1 still alive"+ t1.isAlive());
+        System.out.println("the main thread has finished");
+
+
+
+    }
+}
